@@ -33,7 +33,7 @@ class Vehicle {
     }
   }
 
-  takePassenger(passengerNumber) {
+  void takePassenger(int passengerNumber) {
     if (currentPassengerNumber > passengerSeat) { // check avability of passengerSeat
       print("Seats can't take $passengerNumber people.");
     } else if (currentPassengerNumber == passengerNumber && doorIsLocked == true) { // passengerSeats are avaible and doors locked
